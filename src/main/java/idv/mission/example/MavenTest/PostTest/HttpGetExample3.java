@@ -14,7 +14,7 @@ public class HttpGetExample3 {
         HttpClient client = HttpClientBuilder.create().build();
         String addressEncode = URLEncoder.encode(address, "UTF-8");
         System.out.println(addressEncode);
-        String url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + addressEncode + "&key=" + "AIzaSyCilmFsHE38SE1XrYcNBXmNC8oF0l2Ffno";
+        String url = "";
 
         HttpGet httpGet = new HttpGet(url);
         HttpResponse response = client.execute(httpGet);

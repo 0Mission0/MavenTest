@@ -13,7 +13,7 @@ import org.apache.http.util.EntityUtils;
 
 public class HttpGetExample2 {
     public static void main(String... args) throws IOException {
-        String url = "https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyAtA1_r2rX4fwVAlepLeAaWhdbq9Z5b0K4";
+        String url = "";
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet httpGet = new HttpGet(url);
         ResponseHandler<String> responseHandler = new ResponseHandler<String>() {

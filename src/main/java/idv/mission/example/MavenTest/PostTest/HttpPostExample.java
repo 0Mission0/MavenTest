@@ -14,7 +14,7 @@ public class HttpPostExample {
         HttpClient client = HttpClientBuilder.create().build();
         String addressEncode = URLEncoder.encode(address, "UTF-8");
         System.out.println(addressEncode);
-        String url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + addressEncode + "&key=" + "AIzaSyCilmFsHE38SE1XrYcNBXmNC8oF0l2Ffno";
+        String url = "";
 
         HttpPost httpPost = new HttpPost(url);
         HttpResponse response = client.execute(httpPost);
