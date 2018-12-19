@@ -114,12 +114,8 @@ class Node {
         if( node == null ) {
             return;
         }
-
         inOrderTraverse(node.leftChild);
-
-        // self
         System.out.print(node.value + " ");
-
         inOrderTraverse(node.rightChild);
     }
 
